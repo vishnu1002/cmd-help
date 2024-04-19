@@ -1,3 +1,5 @@
 # Quick-reference cheat sheets for popular programs.
 
-[MongoDB --help](mongodb.md)
+[Git --help](git--help.md)
+[MongoDB --help](mongodb--help.md)
+
