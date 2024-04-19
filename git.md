@@ -17,6 +17,8 @@ Follow the link to Install Git for respective OS:
 - Sign in/Sign up
 - Create a demo repository
 
+[setup](#branch-and-merge)
+
 ## Git Commands --list
 
 ### Setup
