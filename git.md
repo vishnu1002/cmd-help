@@ -102,11 +102,10 @@ Set remote URL with generated token:
 
 Push the updated files to remote repo:
 
-### Generate Token
-
     git push <alias> <branch-name>
 
 Pull updated files from remote repo:
 
     git pull
 
+### Generate Token
