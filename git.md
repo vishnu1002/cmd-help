@@ -17,7 +17,13 @@ Follow the link to Install Git for respective OS:
 - Sign in/Sign up
 - Create a demo repository
 
-[setup](#branch-and-merge)
+[Setup Git](#setup)
+[Initialize](#initialize)
+[Staging](#staging)
+[Branch and Merge](#branch-and-merge)
+[Path Changes](#path-changes)
+[Share and Update](#share-and-update)
+[Generate Token](#generate-token)
 
 ## Git Commands --list
 
@@ -95,6 +101,8 @@ Set remote URL with generated token:
     git remote set-url origin https://<username>:<token>@github.com/<username>/<repository>.git
 
 Push the updated files to remote repo:
+
+### Generate Token
 
     git push <alias> <branch-name>
 
