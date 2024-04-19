@@ -1,3 +1,3 @@
 # Quick-reference cheat sheets for popular programs. Boost your productivity with handy tips and shortcuts
 
-MongoDB --help 
+[MongoDB --help](mongodb.md)
