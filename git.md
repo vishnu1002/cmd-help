@@ -1,3 +1,4 @@
+
 ![git-logo](https://github.com/vishnu1002/cmd-help/assets/145321614/5832a508-964f-492f-8baf-d5d6b84555f2)
 
 
@@ -6,6 +7,10 @@ Git is a distributed version control system, which means it assists in tracking 
  
 GitHub, on the other hand, is a web-based repository hosting platform for Git files. Developers can work together on projects and save their Git repositories in the cloud using this platform. With features like pull requests, code review tools, issue tracking, and project management capabilities, GitHub is a well-liked option for both private and open-source software development projects. 
 Learn more [github.com/about](https://github.com/about)
+
+*Youtube Video to learn more:*
+[# Git Explained in 100 Seconds - Fireship](https://www.youtube.com/watch?v=hwP7WQkmECE)
+[# What is GitHub? - Github](https://www.youtube.com/watch?v=pBy1zgt0XPc)
 
 ## Setup Git
 Follow the link to Install Git for respective OS:
@@ -17,17 +22,18 @@ Follow the link to Install Git for respective OS:
 - Sign in/Sign up
 - Create a demo repository
 
-[Setup Git](#setup)
-[Initialize](#initialize)
-[Staging](#staging)
-[Branch and Merge](#branch-and-merge)
-[Path Changes](#path-changes)
-[Share and Update](#share-and-update)
-[Generate Token](#generate-token)
+## Jump to
+- [Config Git](#setup)
+- [Initialize](#initialize)
+- [Staging](#staging)
+- [Branch and Merge](#branch-and-merge)
+- [Path Changes](#path-changes)
+- [Share and Update](#share-and-update)
+- [Generate Token](#generate-token)
 
 ## Git Commands --list
 
-### Setup
+### Configure
 Configure user information used accross all system/global/local repositories:
 
     git config --global user.name "<github-username>"
@@ -109,3 +115,8 @@ Pull updated files from remote repo:
     git pull
 
 ### Generate Token
+- Follow the link [https://github.com/settings/tokens](https://github.com/settings/tokens) (make sure your logged in)
+- Personal access tokens > Tokens (classic)
+- Generate new token > Generate new token (classic)
+- Check the necessary boxes and generate.
+- Save the token in a save file, for future usecase.
