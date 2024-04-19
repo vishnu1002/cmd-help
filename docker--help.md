@@ -1,5 +1,6 @@
 Docker is a platform that uses containers to make application development, deployment, and maintenance easier. Applications can run reliably across several contexts by using containers, which package them along with all of their dependencies. Scalability, resource efficiency, and management effectiveness are all increased by Docker's containerization technology, which makes application development, testing, and deployment fast and dependable.
 Learn more [docs.docker.com/get-started/overview/](https://docs.docker.com/get-started/overview/)
+
 *Youtube videos to learn more:*
 - [# Docker in 100 Seconds - Fireship](https://www.youtube.com/watch?v=Gjnup-PuquQ)
 ## Installation
