@@ -9,8 +9,8 @@ GitHub, on the other hand, is a web-based repository hosting platform for Git fi
 Learn more [github.com/about](https://github.com/about)
 
 *Youtube Video to learn more:*
-[# Git Explained in 100 Seconds - Fireship](https://www.youtube.com/watch?v=hwP7WQkmECE)
-[# What is GitHub? - Github](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+- [# Git Explained in 100 Seconds - Fireship](https://www.youtube.com/watch?v=hwP7WQkmECE)
+- [# What is GitHub? - Github](https://www.youtube.com/watch?v=pBy1zgt0XPc)
 
 ## Setup Git
 Follow the link to Install Git for respective OS:
