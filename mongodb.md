@@ -16,7 +16,7 @@ Follow the link to Install MongoDB for respective OS:
 - [Install on Linux](https://www.mongodb.com/docs/manual/administration/install-on-linux/)
 
 Install Mongo Shell (mongosh) for respective OS:
-- [Mongo Shell (mongosh)](https://www.mongodb.com/docs/mongodb-shell/install/#std-label-mdb-shell-install)
+- [Install Mongo Shell (mongosh)](https://www.mongodb.com/docs/mongodb-shell/install/#std-label-mdb-shell-install)
 
 ## Mongosh Beginner Commands --list
 
