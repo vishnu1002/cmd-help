@@ -1,4 +1,5 @@
-![MongoDB Logo](https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress)
+![MongoDB_SpringGreen](https://github.com/vishnu1002/cmd-help/assets/145321614/c2e75190-b879-4f47-8e63-2d26f8315002)
+
 ## What is MongoDB?
 
 MongoDB is a flexible and scalable NoSQL database system that stores data in JSON-like documents. It's designed for handling large volumes of structured, semi-structured, and unstructured data. MongoDB offers high availability, scalability, and a powerful query language, making it suitable for a wide range of applications.
