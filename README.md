@@ -1,2 +1,0 @@
-# cmd-help
-commands --help
