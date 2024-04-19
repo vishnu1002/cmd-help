@@ -7,6 +7,9 @@ Learn more [mongodb.com](https://www.mongodb.com/)
 - **Documents** are individual records within collections, storing data in JSON-like format.
 - **Fields** are the data elements within documents, each with a name and value, akin to columns in tables.
 
+*Youtube Video to learn more:*
+- [# MongoDB in 100 Seconds - Fireship](https://www.youtube.com/watch?v=-bt_y4Loofg)
+
 ## Installation
 Follow the link to Install MongoDB for respective OS:
 - [Install on windows](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/)
