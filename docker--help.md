@@ -1,8 +1,5 @@
-![docker-logo](https://github.com/vishnu1002/cmd-help/assets/145321614/d6e871fc-bfc4-4d65-8a54-410191b461ff)
-
 Docker is a platform that uses containers to make application development, deployment, and maintenance easier. Applications can run reliably across several contexts by using containers, which package them along with all of their dependencies. Scalability, resource efficiency, and management effectiveness are all increased by Docker's containerization technology, which makes application development, testing, and deployment fast and dependable.
 Learn more [docs.docker.com/get-started/overview/](https://docs.docker.com/get-started/overview/)
-
 *Youtube videos to learn more:*
 - [# Docker in 100 Seconds - Fireship](https://www.youtube.com/watch?v=Gjnup-PuquQ)
 ## Installation
@@ -14,6 +11,18 @@ Follow the link to Install Git for respective OS:
 
 Login to Docker Hub [hub.docker.com/](https://hub.docker.com/)
 - Create a repo if needed
+
+## Jump to
+- [Docker Login](#docker-login)
+- [Create Images](#create-images)
+- [Docker Hub](#docker-hub)
+- [Start Docker deamon](#start-docker-deamon)
+- [Create Containers](#create-containers)
+- [Simple Dockerfile for Nodejs server](#simple-dockerfile-for-nodejs-server)
+- [Simple Dockerfile for Python file](#simple-dockerfile-for-python-file)
+
+## Docker commands --list
+
 ### Docker Login
 
 Provide username and password create in Docker Hub
@@ -21,6 +30,7 @@ Provide username and password create in Docker Hub
     docker login
 
     docker logout
+
 ### Create Images
 Build an Image from a Dockerfile
 
