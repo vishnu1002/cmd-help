@@ -24,7 +24,21 @@ Create new access key:
 
 -   [AWS account](https://aws.amazon.com/free)  and  [associated credentials](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html)  that allow you to create resources.
 
-Verify the installation:
+## Jump to
+- [Authenticate the Terraform AWS provider](#authenticate-the-terraform-aws-provider)
+- [Provide the credentials](#provide-the-credentials)
+- [Write configuration](#write-configuration)
+- [Define Terraform and AWS](#define-terraform-and-aws)
+- [Create AWS EC2 Instance](#create-aws-ec2-instance)
+- [Initialize the directory](#initialize-the-directory)
+- [Create infrastructure](#create-infrastructure)
+- [List the created infrastructure](#list-the-created-infrastructure)
+- [Destroy infrastructure](#destroy-infrastructure)
+- [Create Custom VPC with Subnet](#create-custom-vpc-with-subnet)
+- [Create Output file](#create-output-file)
+
+
+## Verify the installation:
 
     terraform --version
 
@@ -34,7 +48,7 @@ Verify the installation:
 
     aws configure
 
-Provide the credentials:
+### Provide the credentials
  - `AWS Access Key ID [None]: <access-key>` 
  - `AWS Secret Access Key [None]: <secret-key>`
  - `Default region name [None]: <enter-keep-default>` 
