@@ -56,35 +56,36 @@ Create new file `main.tf` and open in vscode
 ## Define Terraform and AWS
 
 > Make sure region "us-east-1" is given correctly or 
+```
+terraform {
+	required_providers {
+		aws =  {
+			source  =  "hashicorp/aws"
+			version  =  "~> 4.16"
+		}
+	}
+	required_version =  ">= 1.2.0"
+}
 
-    terraform {
-	    required_providers {
-		    aws =  {
-			    source  =  "hashicorp/aws"
-			    version  =  "~> 4.16"
-		    }
-	    }
-	    required_version =  ">= 1.2.0"
-    }
-    
-    provider "aws" {
-	    region =  "us-east-1"
-    }
-
+provider "aws" {
+	region =  "us-east-1"
+}
+```
 ## Create AWS EC2 Instance
 
 > - Make sure to prove the correct AMI ID from the currect region.
 > - The given AMI ID is Ubuntu server in us-east-1 region.
 
-        resource "aws_instance"  "tf_server" {
-    	    ami =  "ami-080e1f13689e07408"
-    	    instance_type =  "t2.micro"
-    	    subnet_id =  aws_subnet.tf_subnet_1.id
-    	    tags =  {
-    		    Name  =  "tf_server"
-    	    }
-        }
-  
+```
+resource "aws_instance"  "tf_server" {
+	ami =  "ami-080e1f13689e07408"
+	instance_type =  "t2.micro"
+	subnet_id =  aws_subnet.tf_subnet_1.id
+	tags =  {
+		Name  =  "tf_server"
+	}
+}
+```  
   > EC2 will be create in the default VPC
     
 ### Initialize the directory
@@ -106,51 +107,53 @@ Create new file `main.tf` and open in vscode
     terraform destroy
   
 ## Create Custom VPC with Subnet
- 
-    # Define custom VPC
-    resource "aws_vpc" "tf-vpc" {
-	    cidr_block = "10.0.0.0/24"
-	    instance_tenancy = "default"
-	    tags = {
-		    Name = "tf_vpc"
-	    }
-    }
-    
-    # Define Subnet
-    resource "aws_subnet" "tf_subnet_1" {
-	    vpc_id = aws_vpc.tf-vpc.id
-	    cidr_block = "10.0.0.0/25"
-	    availability_zone = "us-east-1a"
-	    tags = {
-		    Name = "tf_subnet_1"
-	    }
-    }
 
+```
+# Define custom VPC
+resource "aws_vpc" "tf-vpc" {
+	cidr_block = "10.0.0.0/24"
+	instance_tenancy = "default"
+	tags = {
+		Name = "tf_vpc"
+	}
+}
+
+# Define Subnet
+resource "aws_subnet" "tf_subnet_1" {
+	vpc_id = aws_vpc.tf-vpc.id
+	cidr_block = "10.0.0.0/25"
+	availability_zone = "us-east-1a"
+	tags = {
+		Name = "tf_subnet_1"
+	}
+}
+```
 
 ## Create Output file
 
 Create new file `outputs.tf` in the same directory
 
-    output "instance_id" {
-	    description = "EC2 ID: "
-	    value = aws_instance.tf_server.id
-    }
-    
-    output "instance_public_ip" {
-	    description = "EC2 Public IP: "
-	    value = aws_instance.tf_server.public_ip
-    }
-    
-    output "instance_host_id" {
-	    description = "EC2 Host ID: "
-	    value = aws_instance.tf_server.host_id
-    }
-    
-    output "instance_subnet_id" {
-	    description = "EC2 Subnet ID: "
-	    value = aws_instance.tf_server.subnet_id
-    }
+```
+output "instance_id" {
+	description = "EC2 ID: "
+	value = aws_instance.tf_server.id
+}
 
+output "instance_public_ip" {
+	description = "EC2 Public IP: "
+	value = aws_instance.tf_server.public_ip
+}
+
+output "instance_host_id" {
+	description = "EC2 Host ID: "
+	value = aws_instance.tf_server.host_id
+}
+
+output "instance_subnet_id" {
+	description = "EC2 Subnet ID: "
+	value = aws_instance.tf_server.subnet_id
+}
+```
 To view the output, either run `terraform apply` or
 
     terraform output
