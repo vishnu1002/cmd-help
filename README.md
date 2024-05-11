@@ -4,4 +4,5 @@
 - [Docker --help](docker--help.md)
 - [MongoDB --help](mongodb--help.md)
 - [Terraform --help](terraform--help.md)
+- [WSL2 --help](wsl--help.md)
 
