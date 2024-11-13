@@ -19,6 +19,27 @@ Follow the link to Install MongoDB for respective OS:
 Install Mongo Shell (mongosh) for respective OS:
 - [Install Mongo Shell (mongosh)](https://www.mongodb.com/docs/mongodb-shell/install/#std-label-mdb-shell-install)
 
+## Windows Installation
+[Video Tutorial](https://www.youtube.com/watch?v=1LiZRYzgM2o)
+
+1. Download MongoDB Community Server [link](https://www.mongodb.com/try/download/community)
+    - Platform: `Windows x64` | Package: `msi`
+    - Installer: default options
+    - Open Environment Variables, paste: `C:\Program Files\MongoDB\Server\8.0\bin`
+    
+2. Download MongoDB Shell [link](https://www.mongodb.com/try/download/shell)
+    - Platform: `Windows x64 (10+)` | Package: `msi`
+    - Installer: default options
+
+3. Verify Installation (CMD)
+```
+mongod --version
+```
+Start mongo
+```
+mongosh
+```
+
 ## Jump to
 - [Show Databases](#show-databases)
 - [Create Database](#create-database)
