@@ -12,7 +12,7 @@ Learn more [mongodb.com](https://www.mongodb.com/)
 
 ## Installation
 Follow the link to Install MongoDB for respective OS:
-- [Install on windows](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-windows/)
+- [Install on windows](#windows-installation)
 - [Install on macOS](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/)
 - [Install on Linux](https://www.mongodb.com/docs/manual/administration/install-on-linux/)
 
