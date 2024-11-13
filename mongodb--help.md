@@ -25,7 +25,10 @@ Install Mongo Shell (mongosh) for respective OS:
 1. Download MongoDB Community Server [link](https://www.mongodb.com/try/download/community)
     - Platform: `Windows x64` | Package: `msi`
     - Installer: `Complete` setup | default options
-    - Open Environment Variables, paste: `C:\Program Files\MongoDB\Server\8.0\bin`
+    - Open Environment Variables,
+       - open `Path` under `System Variables`
+       - click `New`
+       - paste: `C:\Program Files\MongoDB\Server\8.0\bin`
     
 2. Download MongoDB Shell [link](https://www.mongodb.com/try/download/shell)
     - Platform: `Windows x64 (10+)` | Package: `msi`
