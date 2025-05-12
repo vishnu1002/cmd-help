@@ -5,24 +5,66 @@
 
 Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
 
-## WSL2 Setup
-1. Open `Windows features on or off`
-2. Check the following options
-	- Virtual Machine Platform
-	- Windows Hypervisor Platform
-	- Windows Subsystem for Linux
-3. Apply and restart
-4. Update WSL2 kernal. [WSL2 Linux kernal update package](https://learn.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package)
-5. Download Ubuntu [Microsoft Store](https://apps.microsoft.com/detail/9pdxgncfsczv?hl=en-us&gl=US)
+## WSL2 Setup via Command Line
+You can install WSL2 directly from the command line (cmd or PowerShell) on Windows 10 (2004+) and Windows 11:
 
-## Verify Installation
-1. Open cmd and run the following commands
+```sh
+wsl --install
 ```
-wsl --status
-wsl --update
-wsl
+
+To install a specific distro (e.g., Ubuntu):
+```sh
+wsl --install -d Ubuntu-20.04
 ```
-2. Mount other drives
+
+## Listing Available (Online) Distros
+List all Linux distros available for install from Microsoft:
+```sh
+wsl --list --online
+# or
+wsl -l -o
 ```
-cd /mnt/<drive letter c,d,e,f>
+
+## Listing Installed Distros
+Show all distros currently installed on your system:
+```sh
+wsl --list --verbose
+# or
+wsl -l -v
 ```
+
+## Removing/Unregistering a Distro
+This will completely remove a distro and all its data:
+```sh
+wsl --unregister <DistroName>
+```
+Example:
+```sh
+wsl --unregister Ubuntu-20.04
+```
+
+## Other Useful WSL Commands
+- Update WSL:
+  ```sh
+  wsl --update
+  ```
+- Set default distro:
+  ```sh
+  wsl --set-default <DistroName>
+  ```
+- Launch a specific distro:
+  ```sh
+  wsl -d <DistroName>
+  ```
+- Export a distro to a tar file:
+  ```sh
+  wsl --export <DistroName> <FileName.tar>
+  ```
+- Import a distro from a tar file:
+  ```sh
+  wsl --import <DistroName> <InstallLocation> <FileName.tar>
+  ```
+- Shutdown all running WSL instances:
+  ```sh
+  wsl --shutdown
+  ``` 
